@@ -13,6 +13,19 @@ void print(int* m_mas, int mas)
     cout << endl;
 }
 
+int MaxVal(int* m_mas, int mas)
+{
+    int max = m_mas[1];
+    for (int i = 0; i < mas; i++)
+    {
+        if (m_mas[i] > max)
+        {
+            max = m_mas[i];
+        }
+    }
+    return max;
+}
+
 void countingSort(int* m_mas,int mas)
 {
     int max = MaxVal(m_mas, mas);
